@@ -1,0 +1,437 @@
+/* AQUI ARRANCA EL CSS DEL HEADER */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.download-btn-first {
+  background: #f7f7f7;
+}
+
+.download-btn-first:hover {
+  background: #234197;
+  color: #fff !important;
+}
+
+.features-btn-first {
+  font-weight: 700;
+}
+
+.features-btn-first:hover {
+  background: #f7f7f7 !important;
+  color: #234197 !important;
+}
+
+
+
+#fh5co-hero-wrapper {
+  height: 200px;
+  width: 100%;
+  background: url("../img/pexels-cottonbro-4488660.jpg") no-repeat center;
+  border-radius: 0 0 50% 50% / 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre elementos */
+}
+
+.main-navbar-nav .navbar-brand {
+  font-size: 38px;
+  letter-spacing: 4px;
+  position: relative;
+  top: -5px;
+  font-weight: 500;
+ 
+}
+
+
+
+.main-navbar-nav {
+  color: #fff !important;
+ 
+}
+.main-navbar-nav li {
+  color: #fff;
+  opacity: .7;
+}
+.main-navbar-nav .navbar-nav .nav-item a:hover {
+  color: #234197 !important;
+  -webkit-transition: all .33s ease;
+  -moz-transition: all .33s ease;
+  -o-transition: all .33s ease;
+  -ms-transition: all .33s ease;
+  transition: all .33s ease;
+}
+.main-navbar-nav .active {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+.main-navbar-nav a {
+  color: #fff !important;
+}
+.main-navbar-nav .nav-link {
+  opacity: 1 !important;
+  margin: 0 35px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.social-icons-header i {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.social-icons-header a:hover i {
+  opacity: .6;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+/* HASTA AQUI TERMINA EL HEADER */
+#tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+
+  .tool-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tool-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .tool-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .tool-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .tool-actions button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  .modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Por defecto oculto */
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  
+  /* Añade estas líneas para centrar */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Botones del modal */
+.modal-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes-btn {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.no-btn {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+  /* ==========================================================================================================
+										SUB FOOTER
+   ========================================================================================================== */
+   .img-float-left {
+    float: left;
+    
+  }
+  
+  .img-float-right {
+    float: right;
+  }
+  
+  .footer-outer {
+    width: 100%;
+    padding: 50px;
+    height: 250px;
+    background: #2e3149;
+    overflow: hidden;
+  }
+  .footer-outer .footer-inner {
+    width: 100%;
+    height: inherit;
+  }
+  .footer-outer .social-icons-footer i {
+    margin: 15px;
+    font-size: 20px;
+  }
+  .footer-outer .social-icons-footer a:hover i {
+    opacity: .6;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  .footer-outer .footer-three-grid {
+    width: 1140px;
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+  }
+  .footer-outer .column-1-3 {
+    width: 20%;
+    float: left;
+    height: 50px;
+  }
+  .footer-outer .column-1-3 h1 {
+    font-size: 38px;
+    letter-spacing: 3px;
+    position: relative;
+    top: -15px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .footer-outer .column-2-3 {
+    width: 60%;
+    float: left;
+    height: 50px;
+  }
+  .footer-outer .column-3-3 {
+    width: 20%;
+    float: left;
+    height: 50px;
+  }
+  .footer-outer .column-3-3 a {
+    color: #b5b5c8;
+  }
+  .footer-outer .column-3-3 .social-icons-header a:hover {
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+  }
+  .footer-outer .footer-nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  .footer-outer .footer-nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    color: #b5b5c8;
+    margin: 0 30px;
+    font-size: 14px;
+  }
+  .footer-outer .footer-nav ul li:hover {
+    color: #fff;
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
+  .footer-outer .footer-nav ul .active {
+    color: #fff;
+  }
+  .footer-outer .footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-outer .border-bottom-footer {
+    height: 1px;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #434769;
+    display: block;
+    margin-top: 50px;
+  }
+  .footer-outer .copyright {
+    color: #565b87;
+    text-align: center;
+    font-size: 13px;
+    padding: 40px 0;
+  }
+  
+  .google-play-btn {
+    margin-left: 10px;
+  }
+ 
+  /* ==========================================================================================================
+                                       RESPONSIVE STYLING
+  ========================================================================================================== */
+  
+  @media screen and (max-width: 1400px) {
+   
+    .footer-outer .footer-three-grid {
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 993px) {
+
+    .footer-outer .footer-nav ul li {
+      margin: 0 10px;
+    }
+  
+    .footer-outer .social-icons-footer i {
+      margin: 15px 10px;
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    
+    .footer-outer {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .footer-outer .column-1-3 {
+      width: 100%;
+      float: none;
+      height: auto;
+      padding-top: 30px;
+    }
+  
+    .footer-outer .column-2-3 {
+      width: 100%;
+      float: none;
+      height: auto;
+    }
+  
+    .footer-outer .column-3-3 {
+      width: 100%;
+      float: left;
+      height: auto;
+      margin: 15px 0;
+    }
+  
+    .footer-outer .copyright {
+      margin-top: 30px;
+      padding: 10px 0;
+    }
+  
+    .footer-outer .border-bottom-footer {
+      height: 1px;
+      width: 100%;
+      margin: 0 auto;
+      border: 1px solid #434769;
+      display: block;
+      margin-top: 100px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .tool-card {
+      width: 100%; /* Full width for small screens */
+      max-width: 100%; /* Ensures full width */
+    }
+  
+    .tool-actions {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      align-items: center;
+    }
+  
+    .tool-actions button {
+      width: 100%; /* Make buttons take full width on small screens */
+      margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .modal-content {
+        width: 80%;  /* Aumenta el ancho en pantallas pequeñas */
+        max-width: 300px; /* Asegura que el modal no sea demasiado grande */
+    }
+}
+  
+
+@media (max-width: 400px) {
+  .modal-content {
+      width: 95%;
+      max-width: 250px;
+  }
+}
+  @media screen and (max-width: 480px) {
+ 
+  
+    .tool-card img {
+      width: 80px; /* Reduce image size on smaller screens */
+      height: 80px;
+    }
+  }
+
+   footer ul{
+
+    margin-top: -17px;
+  } 
